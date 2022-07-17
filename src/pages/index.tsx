@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { FaGithubSquare, FaLinkedin, FaInstagramSquare } from 'react-icons/fa';
 
 const Home: NextPage = () => {
   return (
@@ -26,10 +27,16 @@ const Home: NextPage = () => {
           </h2>
         </div>
 
-        <ul>
-          <li>LinkedIn</li>
-          <li>Github</li>
-          <li>Instagram</li>
+        <ul className="grid gap-2">
+          <li>
+            <FaGithubSquare size={'3rem'} />
+          </li>
+          <li>
+            <FaLinkedin size={'3rem'} />
+          </li>
+          <li>
+            <FaInstagramSquare size={'3rem'} />
+          </li>
         </ul>
       </header>
       <main id="main">HELLO WORLD</main>
