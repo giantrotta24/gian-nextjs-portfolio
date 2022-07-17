@@ -11,23 +11,28 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main id="main">
-        <div className="font-mono grid place-items-center bg-gradient-to-r from-cyan-900 to-[#071b22] text-white h-screen px-4">
-          <div className="antialiased">
-            <p className="text-xs sm:text-base text-teal-300">Hi, my name is</p>
-            <h1 className="text-xl sm:text-5xl font-sans uppercase tracking-wide leading-loose font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-slate-400 to-slate-200">
-              Gianfranco Trotta.
-            </h1>
-            <h2 className="text-xs sm:text-xl">
-              A passionate full-stack{' '}
-              <span className="border-b hover:border-b-2 hover:border-teal-500 hover:cursor-pointer">
-                software engineer
-              </span>
-              .
-            </h2>
-          </div>
+      <header className="font-mono antialiased grid grid-cols-1 md:grid-cols-grid-header gap-x-8 place-items-center text-left bg-zinc-900 text-white h-screen px-4">
+        <div>
+          <p className="text-base text-blue-300">Hi, I am</p>
+          <h1 className="text-3xl sm:text-5xl font-sans uppercase tracking-wide leading-loose font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-blue-600">
+            Gianfranco Trotta.
+          </h1>
+          <h2 className="text-s sm:text-xl">
+            A passionate full-stack{' '}
+            <span className="border-b hover:border-b-2 hover:border-blue-300 hover:cursor-pointer">
+              software engineer
+            </span>
+            .
+          </h2>
         </div>
-      </main>
+
+        <ul>
+          <li>LinkedIn</li>
+          <li>Github</li>
+          <li>Instagram</li>
+        </ul>
+      </header>
+      <main id="main">HELLO WORLD</main>
     </div>
   );
 };
